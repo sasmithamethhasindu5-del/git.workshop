@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sasmitha Methhasindu | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#0a0f1f;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* ===== Particle Background ===== */
+#particles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* ===== Navbar ===== */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:15px 50px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  color:#00d4ff;
+}
+
+nav a{
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+}
+
+/* ===== Hero Section ===== */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  padding:100px;
+  background:linear-gradient(135deg,#0a0f1f,#101a3a);
+}
+
+.hero-text h1{
+  font-size:50px;
+  color:#00d4ff;
+}
+
+.typing{
+  font-size:22px;
+  color:#ffffff;
+  margin-top:10px;
+  min-height:30px;
+}
+
+.glass{
+  background:rgba(255,255,255,0.08);
+  padding:30px;
+  border-radius:20px;
+  backdrop-filter:blur(15px);
+  box-shadow:0 0 20px rgba(0,212,255,0.2);
+}
+
+.profile img{
+  width:250px;
+  border-radius:20px;
+  border:2px solid #00d4ff;
+}
+
+/* Buttons */
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:10px 20px;
+  border:1px solid #00d4ff;
+  color:#00d4ff;
+  border-radius:10px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#00d4ff;
+  color:#000;
+  box-shadow:0 0 15px #00d4ff;
+}
+
+/* ===== Sections ===== */
+section{
+  padding:80px 10%;
+}
+
+h2{
+  color:#00d4ff;
+  margin-bottom:20px;
+}
+
+/* ===== Cards ===== */
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:20px;
+  border-radius:15px;
+  margin:10px;
+  box-shadow:0 0 10px rgba(0,212,255,0.1);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 20px rgba(0,212,255,0.3);
+}
+
+/* Skills */
+.skills{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.progress{
+  height:10px;
+  background:#1b2a4a;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.progress div{
+  height:100%;
+  background:#00d4ff;
+}
+
+/* Contact */
+input,textarea{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border:none;
+  border-radius:10px;
+  background:rgba(255,255,255,0.1);
+  color:white;
+}
+
+/* Scroll animation */
+.hidden{
+  opacity:0;
+  transform:translateY(50px);
+  transition:1s;
+}
+.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:20px;
+  color:#888;
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">SM</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text glass">
+    <h1>Sasmitha Methhasindu</h1>
+    <div class="typing" id="typing"></div>
+
+    <a href="#contact" class="btn">Contact Me</a>
+    <a href="#skills" class="btn">View Skills</a>
+  </div>
+
+  <div class="profile">
+    <img src="https://i.ibb.co/placeholder-ai-profile.jpg" alt="profile">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="hidden">
+  <h2>About Me</h2>
+  <div class="card">
+    I am a 2024 A/L Commerce stream graduate, currently pursuing a Higher National Diploma in Artificial Intelligence and Software Engineering. I am passionate about combining business knowledge with modern technology to create innovative solutions.
+  </div>
+
+  <div class="card">
+    <b>Career Goal:</b><br>
+    My goal is to grow as an AI and Software Engineer, creating intelligent and impactful solutions that bridge the gap between business and technology, and shaping the future of digital innovation.
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="hidden">
+  <h2>Education</h2>
+  <div class="card">GCE A/L 2024 - Commerce Stream</div>
+  <div class="card">GCE O/L 2021</div>
+  <div class="card">Diploma in ICT</div>
+  <div class="card">Diploma in English</div>
+  <div class="card">HND in AI & Software Engineering (Ongoing)</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="hidden">
+  <h2>Skills</h2>
+  <div class="skills">
+
+    <div class="card">
+      Python (Beginner)
+      <div class="progress"><div style="width:40%"></div></div>
+    </div>
+
+    <div class="card">
+      AI & Software Engineering
+      <div class="progress"><div style="width:50%"></div></div>
+    </div>
+
+    <div class="card">
+      Teamwork
+      <div class="progress"><div style="width:80%"></div></div>
+    </div>
+
+    <div class="card">
+      Time Management
+      <div class="progress"><div style="width:75%"></div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="hidden">
+  <h2>Projects</h2>
+  <div class="card">
+    🚀 Currently focusing on learning and skill development. Projects will be added soon.
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="hidden">
+  <h2>Contact Me</h2>
+
+  <div class="card">
+    📞 Phone: <a href="tel:0766469643" style="color:#00d4ff;">0766469643</a><br>
+    📧 Email: <a href="mailto:sasmithamethhasindu1@gmail.com" style="color:#00d4ff;">Send Email</a>
+  </div>
+
+  <div class="card">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea rows="5" placeholder="Message"></textarea>
+    <button class="btn">Send Message</button>
+  </div>
+</section>
+
+<footer>
+  © 2026 Sasmitha Methhasindu | Future Software Engineer
+</footer>
+
+<!-- ===== JS ANIMATIONS ===== -->
+<script>
+// Typing effect
+const text = "Future Software Engineer";
+let i = 0;
+function typing(){
+  if(i < text.length){
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing,100);
+  }
+}
+typing();
+
+// Scroll reveal
+const sections = document.querySelectorAll(".hidden");
+window.addEventListener("scroll",()=>{
+  sections.forEach(sec=>{
+    const top = sec.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100){
+      sec.classList.add("show");
+    }
+  });
+});
+
+// Simple particle effect
+const canvas = document.createElement("canvas");
+document.getElementById("particles").appendChild(canvas);
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+
+for(let i=0;i<80;i++){
+  particles.push({
+    x:Math.random()*canvas.width,
+    y:Math.random()*canvas.height,
+    r:Math.random()*2
+  });
+}
+
+function draw(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  ctx.fillStyle="#00d4ff";
+
+  particles.forEach(p=>{
+    ctx.beginPath();
+    ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+    ctx.fill();
+
+    p.y += 0.5;
+    if(p.y > canvas.height){
+      p.y = 0;
+    }
+  });
+
+  requestAnimationFrame(draw);
+}
+draw();
+</script>
+
+</body>
+</html>
